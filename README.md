@@ -164,14 +164,8 @@ Here you can see the visual changes to the configuration:
 > [config](./config/config_keymap-drawer.yaml).
 > The file for the workflows is in [workflows](./.github/workflows/keymap-drawer.yaml) in case you want to modify it.
 
-## keymap corne
-[![keymap-drawer-demo-corne](keymap-drawer/corne.svg)](https://www.youtube.com/c/mctechnology17)
-## keymap sofle
-[![keymap-drawer-demo-sofle](keymap-drawer/sofle.svg)](https://www.youtube.com/c/mctechnology17)
-## keymap splitkb_aurora_sofle
-[![keymap-drawer-demo-splitkb_aurora_sofle](keymap-drawer/splitkb_aurora_sofle.svg)](https://www.youtube.com/c/mctechnology17)
-## keymap lily58
-[![keymap-drawer-demo-lily58](keymap-drawer/lily58.svg)](https://www.youtube.com/c/mctechnology17)
+## my epic keymap corne
+![keymap-drawer-corne](https://raw.githubusercontent.com/Aidymouse/zmk-config/refs/heads/main/keymap-drawer/corne.svg)
 
 If you want to customize this image with shapes/colors/etc. You can see these references:
 [^1] [^2] [^3]
