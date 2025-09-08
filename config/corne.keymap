@@ -26,6 +26,11 @@
             bindings = <&mo 3>;
             key-positions = <40 41>;
         };
+
+        EnterGamerMode {
+            bindings = <&tog 4>;
+            key-positions = <40 41 17>;
+        };
     };
 
     keymap {
@@ -42,19 +47,19 @@
 
         numbers {
             bindings = <
-&trans  &trans  &trans  &trans     &trans          &trans       &kp N7   &kp N8  &kp N9  &kp MINUS  &trans  &trans
-&trans  &trans  &trans  &trans     &trans          &trans       &kp N4   &kp N5  &kp N6  &kp PLUS   &trans  &trans
-&trans  &trans  &trans  &trans     &trans          &trans       &kp N1   &kp N2  &kp N3  &trans     &trans  &trans
+&trans  &trans  &trans  &trans     &trans          &trans       &kp N7   &kp N8  &kp N9  &kp MINUS     &trans  &kp BACKSPACE
+&trans  &trans  &trans  &trans     &trans          &trans       &kp N4   &kp N5  &kp N6  &kp PLUS      &trans  &trans
+&trans  &trans  &trans  &trans     &trans          &trans       &kp N1   &kp N2  &kp N3  &kp ASTERISK  &trans  &trans
                         &kp LCTRL  &kp LEFT_SHIFT  &kp SPACE    &kp RET  &mo 1   &mo 2
             >;
         };
 
         brackets {
             bindings = <
-&trans  &trans  &trans  &trans     &trans          &trans       &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans          &trans       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans          &trans       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans  &trans  &trans
-                        &kp LCTRL  &kp LEFT_SHIFT  &kp SPACE    &kp RET               &mo 1                  &mo 2
+&trans  &kp GRAVE  &trans  &trans     &trans          &trans       &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans  &trans  &trans
+&trans  &trans     &trans  &trans     &trans          &trans       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans  &trans  &trans
+&trans  &trans     &trans  &trans     &trans          &trans       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans  &trans  &trans
+                           &kp LCTRL  &kp LEFT_SHIFT  &kp SPACE    &kp RET               &mo 1                  &mo 2
             >;
         };
 
@@ -62,12 +67,21 @@
             bindings = <
 &trans  &trans  &trans  &trans     &trans          &trans       &trans   &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans          &trans       &trans   &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans          &trans       &trans   &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans          &trans       &kp F1   &kp F2  &kp F3  &trans  &trans  &trans
                         &kp LCTRL  &kp LEFT_SHIFT  &kp SPACE    &kp RET  &mo 1   &mo 2
             >;
         };
 
         gamer {
+            bindings = <
+&trans  &trans  &trans  &trans            &trans          &trans       &trans   &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans          &trans       &trans   &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans          &trans       &trans   &trans  &trans  &trans  &trans  &trans
+                        &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp SPACE    &kp RET  &trans  &trans
+            >;
+        };
+
+        layer_5 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -77,4 +91,3 @@
         };
     };
 };
-
